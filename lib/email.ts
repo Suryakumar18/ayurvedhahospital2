@@ -1,7 +1,10 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const FROM = process.env.RESEND_FROM_EMAIL || 'BMG Siddha Hospital <onboarding@resend.dev>';
+
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 export interface AppointmentEmailData {
   name: string;
@@ -127,7 +130,7 @@ export async function sendAdminNotification(
 ) {
   if (!toEmail) return;
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: FROM,
       to: toEmail,
       subject: `New Appointment Request — ${data.name} (${data.mobile})`,
@@ -141,7 +144,7 @@ export async function sendAdminNotification(
 export async function sendPatientConfirmation(data: AppointmentEmailData) {
   if (!data.email) return;
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: FROM,
       to: data.email,
       subject: 'Your Appointment is Confirmed — BMG Siddha Hospital',
