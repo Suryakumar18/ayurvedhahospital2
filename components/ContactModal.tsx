@@ -186,17 +186,17 @@ export default function ContactModal() {
                         >
                           <option value="">Select slot...</option>
                           <optgroup label="Morning (8 AM – 1 PM)">
-                            <option>8:00 AM – 9:00 AM</option>
                             <option>9:00 AM – 10:00 AM</option>
                             <option>10:00 AM – 11:00 AM</option>
-                            <option>11:00 AM – 12:00 PM</option>
-                            <option>12:00 PM – 1:00 PM</option>
+                            <option>11:00 AM – 12:00 AM</option>
+                            <option>12:00 AM – 1:00 PM</option>
+                            <option>1:00 PM – 2:00 PM</option>
                           </optgroup>
                           <optgroup label="Evening (4 PM – 8 PM)">
+                            <option>2:00 PM – 3:00 PM</option>
+                            <option>3:00 PM – 4:00 PM</option>
                             <option>4:00 PM – 5:00 PM</option>
-                            <option>5:00 PM – 6:00 PM</option>
-                            <option>6:00 PM – 7:00 PM</option>
-                            <option>7:00 PM – 8:00 PM</option>
+                  
                           </optgroup>
                         </select>
                       </div>
@@ -215,8 +215,8 @@ export default function ContactModal() {
                     <div className="flex items-center justify-center gap-2 pt-1">
                       <Phone className="w-3.5 h-3.5 text-gray-400" />
                       <span className="text-gray-400 text-xs">Or call us:</span>
-                      <a href="tel:+91XXXXXXXXXX" className="text-forest-600 text-xs font-semibold hover:underline">
-                        +91 XXXXX XXXXX
+                      <a href="tel:+919600158736" className="text-forest-600 text-xs font-semibold hover:underline">
+                        +919600158736
                       </a>
                     </div>
                   </form>
