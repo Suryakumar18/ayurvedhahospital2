@@ -151,14 +151,13 @@ export default function Footer() {
               <li className="flex gap-3">
                 <Mail className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" strokeWidth={1.5} />
                 <a href="mailto:care@bmgsiddhahospital.in" className="text-white/55 text-sm hover:text-gold-300 transition-colors break-all">
-                  care@bmgsiddhahospital.in
+                  bmgsidhospital@gmail.com
                 </a>
               </li>
               <li className="flex gap-3">
                 <Clock className="w-4 h-4 text-gold-400 flex-shrink-0 mt-0.5" strokeWidth={1.5} />
                 <p className="text-white/55 text-sm leading-relaxed">
-                  Mon–Sat: 8AM–1PM, 4PM–8PM<br />
-                  Sunday: 8AM–12PM
+                  Mon–Sun: 9AM–1PM, 1PM–5PM
                 </p>
               </li>
             </ul>
