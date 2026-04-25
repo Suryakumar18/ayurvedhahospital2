@@ -91,8 +91,8 @@ export default function Navbar() {
             >
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex items-center gap-4 flex-wrap">
                 <div className="flex items-center gap-4 text-[11px] text-white/80">
-                  <span className="flex items-center gap-1"><Clock className="w-3 h-3 text-gold-300" /> <strong className="text-white">Mon–Sat:</strong> 8–1 AM &amp; 4–8 PM</span>
-                  <span className="hidden sm:flex items-center gap-1"><Clock className="w-3 h-3 text-gold-300" /> <strong className="text-white">Sunday:</strong> 8 AM–12 PM</span>
+                  <span className="flex items-center gap-1"><Clock className="w-3 h-3 text-gold-300" /> <strong className="text-white">Mon–Sun:</strong> 9-1 AM &amp; 1–5 PM</span>
+               
                 </div>
               </div>
             </motion.div>
